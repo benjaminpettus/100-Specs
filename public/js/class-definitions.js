@@ -130,7 +130,14 @@ var domains = {
  *
  */
 
-
+var browsers = {
+	Chromium: "google.com",
+	Safari: "apple.com",
+	Opera: "opera.com",
+	Firefox: "mozilla.org",
+	Sleipnir: "fenrir-inc.com",
+	Konqueror: "konqueror.org"
+};
 /* Step 13
  *
  * Define a literal object named "rainbow"
@@ -147,7 +154,15 @@ var domains = {
  *  isDouble  => true
  *
  */
-
+var rainbow = {
+	colors:{red: "#F0280A", 
+		orange: "#FF8800", 
+		yellow: "#FFDD00", 
+		green: "#51AB0C", 
+		blue: "#1593ED",indigo: "#5215ED", 
+		violet: "#A915ED"},
+ 	isDouble: true
+};
 
 /* Step 14
  *
@@ -163,7 +178,7 @@ var domains = {
  *
  */
 
-
+var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"];
 /* Step 15
  *
  * Declare an array named "DNA" with the
@@ -176,7 +191,7 @@ var domains = {
  * "cytosine"
  *
  */
-
+var DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"];
 
 /* Step 16
  *
@@ -189,7 +204,12 @@ var domains = {
  * Surface      => 320
  *
  */
-
+var laptopCosts = {
+	MacBook: 1500,
+	Alienware: 2500,
+	HP: 499,
+	Surface: 320
+};
 
 /* Step 17
  *
@@ -205,7 +225,7 @@ var domains = {
  * "Species"
  *
  */
-
+var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 
 /* Step 18
  *
@@ -219,7 +239,7 @@ var domains = {
  * "cvs"
  *
  */
-
+var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 
 /* Step 19
  *
@@ -238,7 +258,14 @@ var domains = {
  *                  "Golden"
  *
  */
-
+var beers = {
+	IPA: "Ale",
+	Lager: "Strong",
+	Heffeweisen: "German",
+	Stout: ["Thick", "Dark"],
+	Porter: "Bitter",
+	Ale: ["Light",]
+};
 
 /* Step 20
  *
@@ -248,7 +275,10 @@ var domains = {
  * @return {String}
  *
  */
-
+function sahara_river() {
+	return "Nile River";
+	// body...
+}
 
 /* Step 21
  *
@@ -260,7 +290,11 @@ var domains = {
  * @return {Number}
  *
  */
-
+function addNumbers (number1, number2) {
+  // body...
+  var sum = number1 + number2;
+  return sum;
+}
 
 /* Step 22
  *
@@ -273,7 +307,13 @@ var domains = {
  * @return {Bool}
  *
  */
+function installLinux () {
+  // body...
+  
 
+    }
+
+}
 
 /* Step 23
  *
