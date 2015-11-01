@@ -307,13 +307,13 @@ function addNumbers (number1, number2) {
  * @return {Bool}
  *
  */
-function installLinux () {
-  // body...
-  
+function installLinux (linuxType) {
+  if(linuxFlavors.indexOf(linuxType) !== -1){
+    return true;
+	}
+  	return false;
 
-    }
-
-}
+	}
 
 /* Step 23
  *
@@ -332,7 +332,10 @@ function installLinux () {
  * @return {Bool when False, String when True}
  *
  */
+function drink (beerType) {
 
+	return "This " + beerName + " is "	+ beerDescription;
+}
 
 /* Step 24
  *
