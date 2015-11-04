@@ -264,7 +264,7 @@ var beers = {
 	Heffeweisen: "German",
 	Stout: ["Thick", "Dark"],
 	Porter: "Bitter",
-	Ale: ["Light",]
+	Ale: ["Light", "Golden"]
 };
 
 /* Step 20
@@ -334,18 +334,14 @@ function installLinux (linuxType) {
  */
 function drink (beerName) {
 
-	 for (var key in beers){
+	 for (var i in beers){
 	 	//if input is not a string that is an option in the obcect return false
-      if (beerName !== typeof "" && beerName !== key)
+      if (beerName !== typeof "" && beerName !== i)
         return false;
       } 
-       // else {
-      	// return "This " + key + " is " + beers[key]);
-
-      
-
-  
-}
+      return "This " + i + " is " + beers[i]  + ".";
+     
+  }
 
 /* Step 24
  *
