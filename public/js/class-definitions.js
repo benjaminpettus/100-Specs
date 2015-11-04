@@ -332,9 +332,19 @@ function installLinux (linuxType) {
  * @return {Bool when False, String when True}
  *
  */
-function drink (beerType) {
+function drink (beerName) {
 
-	return "This " + beerName + " is "	+ beerDescription;
+	 for (var key in beers){
+	 	//if input is not a string that is an option in the obcect return false
+      if (beerName !== typeof "" && beerName !== key)
+        return false;
+      } 
+       // else {
+      	// return "This " + key + " is " + beers[key]);
+
+      
+
+  
 }
 
 /* Step 24
