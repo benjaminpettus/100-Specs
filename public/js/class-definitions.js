@@ -333,15 +333,20 @@ function installLinux (linuxType) {
  *
  */
 function drink (beerName) {
+	//iterates through the {beers} above and checks to see if beerName exist in the object
+	if (!beers[beerName]){
+      return false;
+    }
+    //checks to see if the description is a string
+ 	 if(typeof beers[beerName] === "string"){
+      return "This " + beerName + " is " + beers[beerName] + "."; 
+      //if description is not a string, because it is an "array" return both descriptions separately
+    }else {
+      return "This " + beerName + " is " + beers[beerName][0] + " and " + beers[beerName][1] + ".";
+    }
+   
+}
 
-	 for (var i in beers){
-	 	//if input is not a string that is an option in the obcect return false
-      if (beerName !== typeof "" && beerName !== i)
-        return false;
-      } 
-      return "This " + i + " is " + beers[i]  + ".";
-     
-  }
 
 /* Step 24
  *
@@ -354,7 +359,14 @@ function drink (beerName) {
  * @return {String if true else return false}
  *
  */
-
+function browseURL (browsers) {
+	if (!browsers[browser] ){
+		return false;
+	// }else {
+	// 	return " ";
+	// }
+	}
+}
 
 /* Step 25
  *
