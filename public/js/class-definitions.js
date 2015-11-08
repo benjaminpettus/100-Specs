@@ -359,13 +359,13 @@ function drink (beerName) {
  * @return {String if true else return false}
  *
  */
-function browseURL (browsers) {
+function browseURL (browser) {
 	if (!browsers[browser] ){
-		return false;
-	// }else {
-	// 	return " ";
-	// }
+		return false; 
+	} else {
+		return browsers[browser];
 	}
+
 }
 
 /* Step 25
@@ -377,7 +377,17 @@ function browseURL (browsers) {
  * @return {String}
  *
  */
+function listLivingOrgClass (livingOrganismClassification) {
+	var list = document.createElement("ul");
+		body.appendChild(list);
+	for (var i = 0; i < livingOrganismClassification.length; i++){
+		var item = document.createElement("li");
+		list.appendChild(element);
+			item.innerHTML = livingOrganismClassification[i];
+	}
 
+	return list;
+}
 
 /* Step 26
  *
