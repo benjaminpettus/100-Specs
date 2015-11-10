@@ -378,14 +378,20 @@ function browseURL (browser) {
  *
  */
 function listLivingOrgClass (livingOrganismClassification) {
+	//creating ul outside the loop because we only need one
 	var list = document.createElement("ul");
-		body.appendChild(list);
-	for (var i = 0; i < livingOrganismClassification.length; i++){
-		var item = document.createElement("li");
-		list.appendChild(element);
-			item.innerHTML = livingOrganismClassification[i];
-	}
+	body.appendChild(list);
+		
 
+	//iterating through array, and creating/appending a li for each i 
+	for (var i = 0; i < livingOrganismClassification.length; i++){
+		//create list items
+		var item = document.createElement("li");
+		//set contents
+		item.appendChild(document.createTextNode(livingOrganismClassification[i]));
+		//add to the list
+		list.appendChild(item);
+	}
 	return list;
 }
 
@@ -408,7 +414,20 @@ function listLivingOrgClass (livingOrganismClassification) {
  * @return {String}
  *
  */
+function favoritePlanet (currentPlanet) {
+	for (!planets[currentPlanet]){
+		return currentPlanet + " is not a planet!";
+	} else {
+		var randomArray = planet.indexOf(currentPlanet);
+			if( randomArray != -1){
+				planet.splice(randomArray, 1);
+				var randomPlanet = planet[Math.floor(Math.random()*planet.length)];
+				return "I'm from " + currentPlanet + ", " + " but I wish I could go to " + randomPlanet;
+			}
+		
+	}
 
+}
 
 /* Step 27
  *
